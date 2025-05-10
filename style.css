@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+header {
+    font-size: 2.5em;
+    background-color: white;
+    padding: 30px 20px;
+    border-bottom: 5px solid black;
+}
+
+body {
+    background-color: rgb(225, 253, 255);
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-family: cursive;
+    overflow: hidden;
+}
+
+#canvas {
+    margin: 20px;
+    background-color: white;
+    margin: 25px;
+    border: 3px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 5px black;
+}
+
+#speedCanvas {
+    position: absolute;
+    margin: 20px;
+    margin: 25px;
+    border-radius: 5px;
+}
+
+#inputViewer, #refresh {
+    width: 155px;
+    height: 70px;
+    border: 3px solid black;
+    border-radius: 5px;
+    background-color: white;
+    position: fixed;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7em;
+    box-shadow: 0 0 5px black;
+}
+
+#inputViewer {
+    left: 20px;
+}
+
+#refresh {
+    cursor: pointer;
+    right: 20px;
+}
+
+#statistics {
+    width: calc(100% - 40);
+    /* height: 300px; */
+    background-color: white;
+    margin: 20px;
+    border: 4px solid black;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+#statistics > h1 {
+    background-color: rgba(255, 255, 0, 0.35);
+    margin: 20px;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid beige;
+    word-break: keep-all;
+}
+
+
+#wrapper {
+    width: calc(100% - 20px);
+    margin: 20px 10px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    font-size: 1.4em;
+    /* border: 2px solid black; */
+}
+
+#wrapper > p {
+    margin: 10px 0;
+    /* width: 20%; */
+    /* border: 2px solid black; */
+    text-align: center;
+}
+
+@media (width < 800px) and  (width > 650px) {
+
+    #statistics {
+        display: flex;
+    }
+
+    #statistics > h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    #wrapper {
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
